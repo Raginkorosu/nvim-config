@@ -21,7 +21,6 @@ local treesitter_servers = {
     'regex',
     'rust',
     'scss',
-    'sql',
     'toml',
     'typescript',
     'tsx',
