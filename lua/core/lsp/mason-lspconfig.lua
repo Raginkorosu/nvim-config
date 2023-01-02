@@ -25,9 +25,10 @@ local servers = {
     "rust_analyzer",
 --    "sqlls",
 --    "svelte",
+    "sumneko_lua",
     "taplo",
     "tailwindcss",
---    "terraformls",
+    "terraformls",
     "lemminx",
     "yamlls",
 --    "zls"

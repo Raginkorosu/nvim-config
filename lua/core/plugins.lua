@@ -79,7 +79,7 @@ return packer.startup(function(use)
 	use "nvim-telescope/telescope-media-files.nvim"
 
     -- Treesitter
-    use { "nvim-treesitter/nvim-treesitter", run = ":TSUpdate"}
+    use { "nvim-treesitter/nvim-treesitter", { run = ':TSUpdate'} }
 
     -- Autopairs
     use { "windwp/nvim-autopairs" } -- Autopairs integrates with both cmp and lsp.
@@ -110,6 +110,9 @@ return packer.startup(function(use)
 
     -- Indentline
     use { "lukas-reineke/indent-blankline.nvim" }
+
+    -- notifications
+    use { "rcarriga/nvim-notify" }
 
     -- Debugger
     use { 'mfussenegger/nvim-dap' }

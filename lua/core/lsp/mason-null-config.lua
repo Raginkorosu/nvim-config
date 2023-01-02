@@ -21,9 +21,4 @@ local formatting = null_ls.builtins.formatting
 local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
-    sources = {
-        formatting.stylua,
-        diagnostics.eslint,
-        null_ls.builtins.completion.spell
-    }
 })

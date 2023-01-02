@@ -16,7 +16,7 @@ nvim_tree.setup {
     "dashboard",
     "alpha",
   },
-  update_cwd = true,
+  update_cwd = false,
   hijack_directories = {
     enable = true,
     auto_open = true,
