@@ -111,6 +111,9 @@ return packer.startup(function(use)
     -- Indentline
     use { "lukas-reineke/indent-blankline.nvim" }
 
+    -- notifications
+    use { "rcarriga/nvim-notify" }
+
     -- Debugger
     use { 'mfussenegger/nvim-dap' }
     use { 'rcarriga/nvim-dap-ui' }
