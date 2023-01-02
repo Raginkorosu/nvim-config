@@ -1,4 +1,4 @@
-require("robby.lsp.mason")
-require("robby.lsp.mason-lspconfig")
-require("robby.lsp.mason-null-config")
-require("robby.lsp.handlers").setup()
+require("core.lsp.mason")
+require("core.lsp.mason-lspconfig")
+require("core.lsp.mason-null-config")
+require("core.lsp.handlers").setup()
