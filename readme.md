@@ -8,12 +8,13 @@ The folder structure for neovim configuration
 └── nvim
     ├── init.lua
     ├── lua
-    │   └── robby
+    │   └── core
     │       ├── alphanvim.lua
     │       ├── autopairs.lua
     │       ├── bufferline.lua
     │       ├── cmp.lua
     │       ├── colorscheme.lua
+    │       ├── comments.lua
     │       ├── gitsigns.lua
     │       ├── glow.lua
     │       ├── impatient.lua
@@ -25,6 +26,7 @@ The folder structure for neovim configuration
     │       │   └── settings
     │       │       └── sumneko_lua.lua
     │       ├── lualine.lua
+    │       ├── notify.lua
     │       ├── nvimtree.lua
     │       ├── plugins.lua
     │       ├── project.lua
@@ -41,7 +43,7 @@ The folder structure for neovim configuration
 ```
 
 [init.lua](../nvim/.config/nvim/init.lua) the root that initalizes all the configuration files.
-All the configurations are store in [nvim/lua/robby](../nvim/.config/nvim/lua/robby/)
+All the configurations are store in [nvim/lua/core](../nvim/.config/nvim/lua/core/)
 ## The following files and their configurations:
 * sets.lua: Sensible vim configurations.
 * keymaps.lua: Keyboard shortcuts for plugins and vim commands.
@@ -55,6 +57,8 @@ All the configurations are store in [nvim/lua/robby](../nvim/.config/nvim/lua/ro
         * sumneko_lua.lua: Specific lua lsp configuration.
 * cmp.lua: Neovim cmp for autocompletion and documentation window.
 * treesitter.lua: Treesitter configuration for language servers.
+* glow.lua: Markdown Previewer (currently doesn't work for windows)
+* notify.lua: Startup dashboard for neovim. (Provides nice notifications inside neovim).
 * autopairs.lua: Autopair completion.
 * gitsigns.lua: Show git changes on the side of the editor.
 * nvimtree.lua: Configuration for file tree.
@@ -62,4 +66,6 @@ All the configurations are store in [nvim/lua/robby](../nvim/.config/nvim/lua/ro
 * lualine.lua: Status line configuration.
 * bufferline.lua: Shows buffers like tabs.
 * project.lua: Recognize project based on certain files integrates with alphavim dashboard.
+* comment.lua: Helps with toggling comments between current line and next line.
 * alphavim.lua: Startup dashboard for neovim.
+* notify.lua: Startup dashboard for neovim.
