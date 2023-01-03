@@ -1,7 +1,7 @@
 local mason_lspconfig_status_ok, mason_lspconfig = pcall(require, "mason-lspconfig")
 local lspconfig_status_ok, lspconfig = pcall(require, "lspconfig")
-local handlers_status_ok, handlers = pcall(require, "robby.lsp.handlers")
-local sumneko_lua_settings_status_ok, sumneko_lua_settings = pcall(require, "robby.lsp.settings.sumneko_lua")
+local handlers_status_ok, handlers = pcall(require, "core.lsp.handlers")
+local sumneko_lua_settings_status_ok, sumneko_lua_settings = pcall(require, "core.lsp.settings.sumneko_lua")
 
 local servers = {
     "angularls",
