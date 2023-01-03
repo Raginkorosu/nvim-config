@@ -50,7 +50,6 @@ return packer.startup(function(use)
 
     	-- My colorschemes
 	use "shaunsingh/nord.nvim" -- Nord colorscheme
-	use "folke/tokyonight.nvim" -- Tokyonight colorscheme
     use({ --Catppuccin colorscheme
         "catppuccin/nvim",
         as = "catppuccin"
@@ -79,7 +78,7 @@ return packer.startup(function(use)
 	use "nvim-telescope/telescope-media-files.nvim"
 
     -- Treesitter
-    use { "nvim-treesitter/nvim-treesitter", { run = ':TSUpdate'} }
+    use { "nvim-treesitter/nvim-treesitter",  run = ':TSUpdate' }
 
     -- Autopairs
     use { "windwp/nvim-autopairs" } -- Autopairs integrates with both cmp and lsp.
@@ -114,7 +113,9 @@ return packer.startup(function(use)
     -- notifications
     use { "rcarriga/nvim-notify" }
 
-    -- Debugger
+    -- Comments
+    use { "numToStr/Comment.nvim" }
+-- Debugger
     use { 'mfussenegger/nvim-dap' }
     use { 'rcarriga/nvim-dap-ui' }
 

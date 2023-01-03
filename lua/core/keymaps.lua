@@ -64,7 +64,23 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
+keymap('n', '<leader>gf', '<cmd>Telescope git_files<cr>', opts)
+keymap('n', '<leader>bg', '<cmd>Telescope current_buffer_fuzzy_find<cr>', opts)
 
 --#region Terminal
 keymap("n", "<leader>g", "<cmd>lua LAZY_GIT()<cr>", opts)
 --#endregion
+
+
+--[[
+--  - Normal Mode Mappings.
+-- 'gcc' - Toggles the current line using linewise comment.
+-- 'gbc' - Toggles the current line using blockwise comment.
+--  [count]gcc - Toggles the number of line given as a prefix-count using linewise.
+--  [count]gbc - Toggles the number of line given as a prefix-count using blockwise.
+--  [count]gbc - Toggles the number of line given as a prefix-count using blockwise.
+--
+--  - Visual Mode
+-- 'gc' - Toggles the region using linewise comment
+-- 'gb' - Toggles the region using blockwise comment
+--]]
