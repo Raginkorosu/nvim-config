@@ -56,7 +56,6 @@ vim.opt.sidescrolloff = 8                               -- min. nr. of columns t
 
 -- Terminal Settings
 vim.opt.termguicolors = true                            -- set term gui colors (most terminals support this)
-vim.opt.guifont = "hack:h16"                            -- the font used in graphical neovim applications
 
 -- Buffer splitting
 vim.opt.splitbelow = true                               -- force all horizontal splits to go below current window
