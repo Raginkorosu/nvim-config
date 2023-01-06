@@ -58,7 +58,7 @@ All the configurations are store in [nvim/lua/core](../nvim/.config/nvim/lua/cor
 * cmp.lua: Neovim cmp for autocompletion and documentation window.
 * treesitter.lua: Treesitter configuration for language servers.
 * glow.lua: Markdown Previewer (currently doesn't work for windows)
-* notify.lua: Startup dashboard for neovim. (Provides nice notifications inside neovim).
+* notify.lua: Provides nice notifications inside neovim.
 * autopairs.lua: Autopair completion.
 * gitsigns.lua: Show git changes on the side of the editor.
 * nvimtree.lua: Configuration for file tree.
@@ -68,4 +68,3 @@ All the configurations are store in [nvim/lua/core](../nvim/.config/nvim/lua/cor
 * project.lua: Recognize project based on certain files integrates with alphavim dashboard.
 * comment.lua: Helps with toggling comments between current line and next line.
 * alphavim.lua: Startup dashboard for neovim.
-* notify.lua: Startup dashboard for neovim.
