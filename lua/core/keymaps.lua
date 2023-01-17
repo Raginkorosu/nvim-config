@@ -51,7 +51,6 @@ keymap("v", ">", ">gv", opts)
 -- Move text up and down
 keymap("v", "J", ":m .-2<CR>==", opts)
 keymap("v", "K", ":m .+1<CR>==", opts)
-keymap("v", "p", '"_dP', opts)
 
 -- Visual Block --
 -- Move text up and down
@@ -66,6 +65,13 @@ keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap('n', '<leader>gf', '<cmd>Telescope git_files<cr>', opts)
 keymap('n', '<leader>bg', '<cmd>Telescope current_buffer_fuzzy_find<cr>', opts)
+
+-- Ctrl-u and Ctrl-d
+keymap('n', '<C-d>', '<C-d>zz', opts)
+keymap('n', '<C-u>', '<C-u>zz', opts)
+
+-- Greatest remap ever
+keymap('n', '<leader>p', '\'_dP', opts)
 
 --#region Terminal
 keymap("n", "<leader>g", "<cmd>lua LAZY_GIT()<cr>", opts)

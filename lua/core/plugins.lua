@@ -115,9 +115,13 @@ return packer.startup(function(use)
 
     -- Comments
     use { "numToStr/Comment.nvim" }
--- Debugger
+
+    -- Debugger
     use { 'mfussenegger/nvim-dap' }
     use { 'rcarriga/nvim-dap-ui' }
+
+    -- Startup Profiler
+    use { 'dstein64/vim-startuptime' }
 
 
     -- Automatically set up your configuration after cloning packer.nvim
