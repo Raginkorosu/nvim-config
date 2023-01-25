@@ -68,3 +68,8 @@ All the configurations are store in [nvim/lua/core](../nvim/.config/nvim/lua/cor
 * project.lua: Recognize project based on certain files integrates with alphavim dashboard.
 * comment.lua: Helps with toggling comments between current line and next line.
 * alphavim.lua: Startup dashboard for neovim.
+
+## Performance
+Currently it takes about 1.5s to load the configuration.
+Need to make startup time faster.
+Might switch from packer.nvim to lazy.nvim
